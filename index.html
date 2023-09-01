@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <div id="container">
+        <div class="container-left">
+            <a href="#"><i class="fa-solid fa-eye"></i></a>
+            <a href="#"><i class="fa-solid fa-heart-pulse"></i></a>
+            <a href="#"><i class="fa-solid fa-satellite-dish"></i></a>
+            <a href="#"><i class="fa-solid fa-calendar"></i></a>
+            <a href="#"><i class="fa-solid fa-sliders"></i></a>
+            <a href="#"><i class="fa-regular fa-comments"></i></a>
+            <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        </div>
+        <div class="container-middle">
+            <div class="middle-first">
+                <i class="fa-solid fa-table-list"></i>
+                <i class="fa-solid fa-bars"></i>
+                <select name="" id="" class="last15days">
+                    <option value="last15days">LAST 15 DAYS</option>
+                </select>
+            </div>
+            <div class="middle-second">
+                <div class="container-box">
+                    <div class="box"><i class="fa-brands fa-twitter"></i> <br>
+                        <span class="follower-count">280k</span><br>
+                        <span class="followers">Followers</span><br>
+                        <span class="point">...</span>
+                    </div>
+                    <div class="box"><i class="fa-brands fa-instagram"></i>
+                    <br>
+                    <span class="follower-count">680k</span><br>
+                    <span class="followers">Followers</span><br>
+                    <span class="point">...</span></div>
+                    <div class="box"><i class="fa-brands fa-youtube"></i><br>
+                        <span class="follower-count">2.3M</span><br>
+                        <span class="followers">Followers</span><br>
+                        <span class="point">...</span></div>
+                    <div class="box"><i class="fa-brands fa-facebook-f"></i><br>
+                        <span class="follower-count">50k</span><br>
+                        <span class="followers">Followers</span><br>
+                        <span class="point">...</span></div>
+                </div>
+            </div>
+            <div class="middle-third">
+                <div class="container-graph">
+                    <!-- <canvas id="myChart"></canvas> -->
+                    <div class="mainWrapper">
+                        <div class="contentWrapper">
+                          <div class="chartMainWrapper">
+                          <div class="headerWrapper">
+                            <p class="title">Instagram Subscribers</p>
+                            <div class="infoWrapper">
+                                <div class="gainbox">                         
+                                    <span class="gain-circle green"></span>
+                                    <span class="text">Gained</span>
+                                </div>
+                                <div class="lostbox">                       
+                                    <span class="gain-circle red"></span>
+                                    <span class="text">Lost</span>
+                                </div>
+                            </div>
+                          </div> 
+                          <div class="mainContentWrapper">
+                            <canvas width="100%" height="26" id="chart1"></canvas>
+                          </div>
+                        </div> 
+                        </div>
+                    </div>
+                    <script src="./chart.js"></script>       
+                </div>
+            </div>
+            <div class="middle-fourth">
+                <div class="fourth-left"> <span class="left-title"><h4>Key Metrics</h4></span>
+                    <div class="flex-container">
+                        <div class="left">Clicks</div>
+                        <div class="right">10k</div>
+                        
+                    </div> 
+                    <div class="flex-container">
+                        <div class="left">Likes</div>
+                        <div class="right">680</div>
+                        
+                    </div> 
+                    <div class="flex-container">
+                        <div class="left">Followers</div>
+                        <div class="right">8k</div>
+                        
+                    </div> 
+                    <div class="flex-container">
+                        <div class="left">Impressions</div>
+                        <div class="right">5500</div>
+                        
+                    </div> 
+                </div>
+                <div class="fourth-right">
+                    <div class="fourth-right-1">
+                        <span class="middle-title"><h5>Page Impressions</h5></span>
+                        <span class="middle-followers"><h1>8.6k</h1></span>
+                    </div>
+                    <div class="fourth-right-2">
+                        <span class="middle-title"><h5>Engaged Users</h5></span>
+                        <span class="middle-followers"><h1>12.2k</h1></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="right-first">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="right-second">
+            </div>
+            <div class="right-third">
+            </div>
+            <div class="right-fourth">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        // Canvas elementini seçin
+var ctx = document.getElementById('myBarChart').getContext('2d');
+
+// Sütun grafiğini oluşturun
+var myBarChart = new Chart(ctx, {
+    type: 'bar', // Sütun grafiği
+    data: {
+        labels: ['Veri 1', 'Veri 2', 'Veri 3', 'Veri 4'], // Etiketler
+        datasets: [{
+            label: 'Sütun Grafiği',
+            data: [12, 19, 3, 5], // Veri değerleri
+            backgroundColor: 'rgba(75, 192, 192, 0.2)', // Sütun rengi
+            borderColor: 'rgba(75, 192, 192, 1)', // Kenar rengi
+            borderWidth: 1 // Kenar kalınlığı
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true // Y eksenini sıfırdan başlat
+            }
+        }
+    }
+});
+    </script> 
+</body>
+</html>
