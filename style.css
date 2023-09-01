@@ -1,0 +1,271 @@
+body {
+    background-image: url("./images/background.jpg");
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#container {
+    width: 900px;
+    height: 600px;
+    background-color: white;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -450px;
+    margin-top: -300px;
+    border-radius: 30px;
+    display: flex;
+}
+
+.container-left {
+    width: 80px;
+    background-color: white; 
+    border-top-left-radius: 30px; 
+    border-bottom-left-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-eye {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.fa-heart-pulse, .fa-satellite-dish, .fa-calendar, .fa-sliders, .fa-comments {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.fa-arrow-right-from-bracket {
+    font-size: 25px;
+    margin-top: 240px;
+}
+
+a {
+    color: black;
+    text-decoration: none; 
+}
+
+.container-middle {
+    background-color: gainsboro; 
+    width: 600px;
+}
+
+.middle-first {
+    width: 600px;
+    height: 40px;
+}
+
+.fa-table-list, .fa-bars {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.last15days {
+    margin-left: 400px;
+}
+
+.container-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 130px;
+    height: 130px;
+    background-color: lightgray;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.fa-twitter {
+    font-size: 25px;
+    color: blue;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.fa-instagram {
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.fa-youtube {
+    font-size: 25px;
+    color: red;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.fa-facebook-f {
+    font-size: 25px;
+    color: darkblue;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.container-graph {
+    width: 580px;
+    height: 170px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.middle-fourth {
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+    margin-top: 20px;
+}
+
+.fourth-left, .fourth-right {
+    width: 280px;
+    height: 175px;
+    border-radius: 30px;
+}
+
+.fourth-left {
+    background-color: whitesmoke;
+    margin-left: 10px;
+    
+}
+
+.fourth-right {
+    display: flex;
+    flex-direction:row-reverse ;
+    margin-left: 20px;
+}
+
+.fourth-right-1, .fourth-right-2 {
+    width: 100px;
+    height: 175px;
+    flex: 1;
+    border-radius: 30px;
+    background-color: purple;
+    margin-right: 10px;
+    margin-left: 10px; 
+    justify-content: space-between;
+}
+
+.container-right {
+    background-color: white;
+    width: 220px;
+    border-top-right-radius: 30px; 
+    border-bottom-right-radius: 30px;
+}
+
+.right-first {
+    height: 35px;
+    background-color:white;
+    border-top-right-radius: 30px; 
+    display: flex;
+    align-items: center;
+}
+
+.fa-bell, .fa-user {
+    font-size: 20px;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.fa-bell {
+    margin-right: 145px;
+}
+
+.right-second {
+    height: 150px;
+    background-color: whitesmoke;
+    background-image: url(./images/scrum.png);
+    background-size: contain;
+    background-position: center;
+    border-radius: 30px;
+}
+.follower-count {
+    font-size: 25px;
+    color: black; /* İstediğiniz renk kodunu kullanabilirsiniz */
+    margin-top: 15px; /* Metni biraz yukarı taşımak için */
+    margin-left: 15px;
+}
+.followers{
+    font-size: 15px;
+    color: #555;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.point{
+    margin-top: 20px;
+    margin-left: 85px;
+    font-size: 35px;
+    color: black;
+    font-weight: 900;
+}
+.middle-title{
+    font-size: 19px;
+    color: white;
+    text-align: center;
+    display: block;
+    
+}
+.middle-followers{
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    
+    
+}.left-title h4{
+    margin-left: 15px;
+    color: black;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* İçerikleri en sağda ve en solda yerleştir */
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+.left, .right {
+    flex: 0; /* Eşit genişlik verir, yani sol ve sağ alanlar aynı genişlikte olur */
+}
+.middle-left-middle{
+    align-items: center;
+}
+.container-left a {
+    text-decoration: none; /* Link altı çizgisi kaldır */
+    
+    color: #333; /* İkon rengi */
+    font-size: 24px; /* İkon boyutu */
+    transition: color 0.3s ease; /* Renk değişikliklerini yumuşak bir şekilde geçiş yapar */
+}
+
+/* Hover etkisi ekleyin */
+.container-left a:hover {
+    color: #FF5733; /* Hover sırasında ikon rengini değiştirin */
+}
+/* Temel stil ayarları */
+.container-box .box {
+    text-align: center;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover etkisi ekleyin */
+.container-box .box:hover {
+    background-color: #f0f0f0; /* Hover sırasında arka plan rengini değiştirin */
+}
