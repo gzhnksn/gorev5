@@ -1,0 +1,78 @@
+.mainWrapper{
+    display: flex;
+    width: 90%;
+    max-width: 960px;
+    height:670px;
+    border-radius: 25px;
+    /* background-color: rgb(192, 159, 159); */
+    overflow: hidden;
+}
+
+.contentWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex: 1;
+}
+
+.chartMainWrapper{
+    width: 100%;
+    height: 170px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chartMainWrapper .headerWrapper{
+    display: flex;
+}
+
+.chartMainWrapper .headerWrapper .title{
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.chartMainWrapper .infoWrapper{
+    display: flex;
+    gap: 8px;
+    margin-left: 200px;
+}
+
+.chartMainWrapper .infoWrapper .gainbox,
+.chartMainWrapper .infoWrapper .lostbox{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.chartMainWrapper .infoWrapper .gainbox .text,
+.chartMainWrapper .infoWrapper .lostbox .text{
+    display: flex;
+    font-size: 11px;
+}
+
+.chartMainWrapper .infoWrapper span.gain-circle{
+    display: inline-block;
+    background-color: #fff;
+    width: 6px;
+    height: 5px;
+    border-radius: 9999999px; 
+}
+
+.chartMainWrapper .infoWrapper span.gain-circle.green{
+    background-color: yellowgreen;
+}
+.chartMainWrapper .infoWrapper span.gain-circle.red{
+    background-color: red;
+}
+
+.chartMainWrapper .mainContentWrapper{
+    height: 225px;
+    flex:1;
+}
+
+.chartMainWrapper .mainContentWrapper canvas{
+    width: 100%;
+}
+
